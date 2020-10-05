@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Recipe</title>
+        <link rel="stylesheet" href="receipe.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<h1 id = "name">Name</h1>
+<h2 id = "author">Author</h2>
+<img src="muffins.jpg" alt="Blueberry Muffins" width="380" height="280" class = "center">
+<p id = "description">Description</p>
+<p id = "cookTime">Cook Time</p>
+<p id = "yield">Yield</p>
+<p id = "nutrition">Calories</p> 
+<h3 id = "Ingredients:">Ingredients:</h3>   
+<p id = "recipeIngredient">Recipe Ingredient</p>  
+<p id = "recipeIngredient1">Recipe Ingredient</p> 
+<p id = "recipeIngredient2">Recipe Ingredient</p> 
+<p id = "recipeIngredient3">Recipe Ingredient</p> 
+<p id = "recipeIngredient4">Recipe Ingredient</p> 
+<p id = "recipeIngredient5">Recipe Ingredient</p> 
+<p id = "recipeIngredient6">Recipe Ingredient</p> 
+<h3 id = "instructions">Instructions:</h3>    
+<p id = "recipeInstructions">Instructions:</p>    
+<p id = "stepTwo">Instructions</p> 
+<p id = "stepThree">Instructions</p>
+<p id = "stepFour">Instructions</p>
+<p id = "stepFive">Instructions</p> 
+<p id = "stepSix">Instructions</p> 
+<p id = "stepSeven">Instructions</p>
+<img src="muffins2.jpg" alt="Blueberry Muffins" width="260" height="320" class = "center">
+<h2 id = "author">Enjoy!</h2>
+<h4 id = "footer"> Footer </h4>
+ 
+</body>
+</html>
+
+
+
+<script> 
+
+let recipe = {
+  "@context": "https://schema.org",
+  "@type": "Recipe",
+  "author": "Jordan Marsh",
+  "yield": "Yield: 12 muffins",
+  "cookTime": "Prep Time: 40 minutes",
+  "description": "This recipe is taken for New York Times Cooking. This version has a lot more sugar and butter and fewer eggs. The recipe also calls for mashing a half cup of berries and adding them to the batter. This produces a very moist muffin, one that will stay fresh longer.",
+  "image": "muffins.jpg",
+  "recipeIngredient": [
+    "• 1/2 cup softened butter",
+  ],
+  "recipeIngredient1": [
+    "• 2 eggs",
+  ],
+    "recipeIngredient2": [
+    "• 1 1/4 cups of sugar",
+  ],
+    "recipeIngredient3": [
+    "• 1 tsp. vanilla extract",
+  ],
+    
+    "recipeIngredient4": [
+    "• 2 cups of flour",
+  ],
+    "recipeIngredient5": [
+    "• 1/2 tsp. of salt",
+  ],
+    "recipeIngredient6": [
+    "• 2 cups of blueberries",
+  ],
+
+
+
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "https://schema.org/Comment",
+    "userInteractionCount": "140"
+  },
+  "name": "Blueberry Muffins🍴",
+  "nutrition": "Calories: 260",
+  "footer": "© 2020 Anjali Chary ",
+
+  "prepTime": "PT15M",
+  "instructions": "Instructions",
+  "recipeInstructions": "1. Preheat the oven to 375.",
+  "stepTwo": "2. Cream the butter and 1 1/4 cups sugar until light.",
+  "stepThree": "3. Add the eggs, one at a time, beating well after each addition. Add vanilla.",
+  "stepFour": "4. Sift together the flour, salt and baking powder, and add to the creamed mixture alternately with the milk.",
+  "stepFive": "5. Crush 1/2 cup blueberries with a fork, and mix into the batter. Fold in the remaining whole berries.",
+  "stepSix": "6. Line a 12 cup standard muffin tin with cupcake liners, and fill with batter. Sprinkle the 3 teaspoons sugar over the tops of the muffins, and bake at 375 degrees for about 30-35 minutes.",
+  "stepSeven": "7. Remove muffins from tin and cool at least 30 minutes. Store, uncovered, or the muffins will be too moist the second day, if they last that long.",
+  "suitableForDiet": "https://schema.org/LowFatDiet"
+}
+
+
+document.getElementById("name").innerText = recipe.name;
+document.getElementById("description").innerText = recipe.description;
+document.getElementById("recipeIngredient").innerText = recipe.recipeIngredient;
+document.getElementById("recipeIngredient1").innerText = recipe.recipeIngredient1;
+document.getElementById("recipeIngredient2").innerText = recipe.recipeIngredient2;
+document.getElementById("recipeIngredient3").innerText = recipe.recipeIngredient3;
+document.getElementById("recipeIngredient4").innerText = recipe.recipeIngredient4;
+document.getElementById("recipeIngredient5").innerText = recipe.recipeIngredient5;
+document.getElementById("recipeIngredient6").innerText = recipe.recipeIngredient6;
+document.getElementById("author").innerText = recipe.author;
+document.getElementById("cookTime").innerText = recipe.cookTime;
+document.getElementById("yield").innerText = recipe.yield;
+document.getElementById("instructions").innerText = recipe.instructions;
+document.getElementById("recipeInstructions").innerText = recipe.recipeInstructions;
+document.getElementById("stepTwo").innerText = recipe.stepTwo;
+document.getElementById("stepThree").innerText = recipe.stepThree;
+document.getElementById("stepFour").innerText = recipe.stepFour;
+document.getElementById("stepFive").innerText = recipe.stepFive;
+document.getElementById("stepSix").innerText = recipe.stepSix;
+document.getElementById("stepSeven").innerText = recipe.stepSeven;
+document.getElementById("nutrition").innerText = recipe.nutrition;
+document.getElementById("footer").innerText = recipe.footer;
+</script>

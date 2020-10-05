@@ -1,0 +1,53 @@
+body{
+    background-color: beige;
+    font-family: "Avenir";
+    margin-top: 100px;
+    margin-right: 100px; 
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+#name{
+    text-align: center;
+}
+
+#author{
+    text-align: center;
+    color: skyblue;
+}
+
+#yield{
+    font-weight: 600;
+}
+
+#cookTime{
+    font-weight: 600;
+}
+
+#nutrition{ 
+    font-weight: 600;
+}
+
+#description{
+    margin-top: 30px;
+    font-size: 18px;
+    
+}
+
+img{
+    text-align: center;
+     border-radius: 30px;
+
+    transition: transform .6s; /* Animation */
+}
+
+img:hover{
+    transform: scale(1.1)
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
